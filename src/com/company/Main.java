@@ -3,26 +3,38 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        byte years = 18;
-        short days = 6851;
-        int hours = 164424;
-        long milliseconds=591926400000L;
-        float study_in_Germany = 1.5f;
-        double sqrt_of_my_age = 4.24264;
-        char first_letter= 'V';
-        boolean scholarship = true;
-        String name = "Vova";
-
-        System.out.println("My name is " + name);
-        System.out.println("I live for " + years + " years, " + days + " days, " + hours + " hours and "
-                + milliseconds +  " milliseconds.");
-        System.out.println("I have studied in Germany for " + study_in_Germany + " years");
-        System.out.println("Square root of my age is " +sqrt_of_my_age);
-        System.out.println("The first letter of  my name is " + first_letter);
-
-        if (scholarship) {
-            System.out.println("I have the scholarship");
+        byte numberOfTeams = 10;
+        byte numberOfRacers = 20;
+        char formula1 = 'F';
+        String bestTeam = "Mercedes";
+        int salaryInDollars = 60_000_000;
+        long salaryInHryvnias = 1_687_170_000;
+        short kilometers = 305;
+        float fastestPitStop = 1.88f;
+        double averageTimeOfPitStop = 2.5;
+        boolean isDangerous = true;
+        System.out.println("Нещодавно я відкрив для себе такий " + "вид " +
+                "спорту, як автомобільні гонки, а саме \""+ formula1 + "-1.\"" +
+                "\nВ кожній гонці приймає участь " + numberOfTeams +
+                " команд, у кожній по 2 гонщика, отже на трасі всього " +
+                numberOfRacers + " суперників.\nЗараз домінує " +
+                "команда " + bestTeam + " яка виграє вже 6 років " +
+                "поспіль. \n5 з цих виграшів приніс команді пілот " +
+                "Льюіс Хемільтон. \nЙого зарплата складає " + salaryInHryvnias +
+                " гривень, або " + salaryInDollars + "$ в рік." +
+                "\nГонка триває не більше двох годин, а відстань, яку," +
+                " в середньому, проїхає пілот складає - " + kilometers +
+                " кілометрів. \nКожна команда має змінити хоча би " +
+                "один раз тип шин, це робиться на піт-стопі.\nВ середньому" +
+                " це займає " + averageTimeOfPitStop +" секунд, а самий" +
+                " швидкий піт-стоп був зроблений командою Red Bull за " +
+                fastestPitStop + " секунд. \nЯкщо ви мене запитаєте, чи є " +
+                "автогонка небезпечним видом спорту, я вам відповім: ");
+        if(isDangerous){
+            System.out.println("Однозначно так! Кожного разу " +
+                    "виїзжджаючи на трасу пілот ризикує попасти" +
+                    " в аварію та травмуватись, тому цей вид " +
+                    "спорту є надзвичайно небезпечним.");
         }
-        else System.out.println("I dont have the scholarship");
     }
 }
